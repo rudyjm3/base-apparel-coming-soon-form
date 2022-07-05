@@ -9,6 +9,33 @@
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  height: 500px;
+}
+
+#main-container .left-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  height: 100%;
+  padding: 3rem 6rem;
+}
+
+#main-container aside {
+  width: 40%;
+  height: 500px;
+  background-image: url("/images/hero-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .attribution {

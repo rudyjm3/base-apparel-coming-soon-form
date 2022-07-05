@@ -3,8 +3,26 @@
    justify-content: center;
    align-items: center;
    width: 80%;
+   height: 500px;
 
-   
+   .left-wrapper{
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 60%;
+      height: 100%;
+      padding: 3rem 6rem;
+   }
+   //Styling for right side
+   aside{
+      width:40%;
+      height: 500px;
+      background-image: url('/images/hero-desktop.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
 }
 
 
