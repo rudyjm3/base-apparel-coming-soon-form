@@ -1,3 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+div,
+aside,
+header {
+  border: 1px solid red;
+}
+
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+  background-color: #5e5e5e;
+}
+
 #main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,15 +57,49 @@
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 60%;
   height: 100%;
+  background-color: white;
   padding: 3rem 6rem;
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-container .left-wrapper main h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+
+#main-container .left-wrapper main h1 .first-word-title {
+  color: var(--Desaturated-Red);
+  font-weight: 300;
+}
+
+#main-container .left-wrapper main p {
+  color: var(--Desaturated-Red);
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+#main-container .left-wrapper form input[type=email] {
+  width: 100%;
+  height: 35px;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid var(--Desaturated-Red);
+  font-weight: 600;
 }
 
 #main-container aside {
