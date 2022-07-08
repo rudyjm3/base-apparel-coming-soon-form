@@ -6,14 +6,15 @@ body{
    align-items: center;
    flex-wrap: wrap;
    height: 100vh;
-   background-color: rgb(94, 94, 94);
+   background-color: rgb(61, 61, 61);
 }
 #main-container{
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 80%;
+   width: 60%;
    height: 500px;
+   // margin-bottom: 50px;
 
    .left-wrapper{
       display:flex;
@@ -23,7 +24,7 @@ body{
       width: 60%;
       height: 100%;
       background-color: white;
-      padding: 3rem 6rem;
+      padding: 2rem 6rem 3rem;
       background-image: url('/images/bg-pattern-desktop.svg');
       background-position: center;
       background-repeat: no-repeat;
@@ -63,7 +64,7 @@ body{
             input {
                width: 100%;
                height: 40px;
-               padding: 8px 110px 8px 15px;
+               padding: 8px 105px 8px 15px;
                border-radius: 50px;
                border: 1px solid var(--Desaturated-Red);
                font-weight: 600;
@@ -80,22 +81,22 @@ body{
                justify-content: center;
                align-items: center;
                position: absolute;
-               top: 11px;
-               right: 85px;
+               top: 12px;
+               right: 83px;
                opacity: 0;
                transition: all 0.3s ease-in-out;
                img {
-                  width: 20px;
+                  width: 17px;
                }
             }
             .error-txt{
                color: #ff3860;
                font-size: 12px;
                font-weight: 700;
-               height: 25px;
+               height: 20px;
                padding-left: 20px;
-               margin-top: 10px;
-               line-height: 1.5;
+               margin-top: 5px;
+               // line-height: 1.5;
                transition: all 0.3s ease-in-out;
             }
          }
@@ -144,11 +145,23 @@ body{
    }
 }
 
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   bottom: 0;
+   padding: 10px;
+   background-color: #333;
+   width: 100%;
+   .attribution { 
+      // position: absolute;
+      // bottom: 20px;
+      font-size: 11px; text-align: center; 
+      color: white;
+      a {
+         color: hsl(228, 45%, 44%);   
+      }
+   }
+}
 
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
