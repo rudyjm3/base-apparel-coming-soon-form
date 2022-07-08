@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
   <link rel="stylesheet" href="/scss/main-stylesheet.css">
+  <script defer src="./js/main.js"></script>
   
   <title>Base Apparel coming soon page</title>
 </head>
@@ -29,14 +30,25 @@
             <p>Hello fellow shoppers! We're currently building our new fashion store. 
                Add your email below to stay up-to-date with announcements and our launch deals.
             </p>
-            <form action="">
-               <input type="email" name="email" id="email" placeholder="Email-Address">
-               <button type="submit"><img src="/images/icon-arrow.svg" alt="arrow right"></button>
-               <div class="error-icon"><img src="/images/icon-error.svg" alt="error icon"> </div>
-               <div class="form-error-txt">error</div>
+            <form action="/" name="email-form" id="emailForm" onsubmit="return false;">
+
+               <div class="input-control">
+                  <input type="text" name="email" id="email" placeholder="Email-Address">
+                  <div class="error-txt"></div>
+                  <div class="error-icon"><img src="/images/icon-error.svg" alt="error icon"> </div>
+               </div>
+
+               <button type="submit">
+                  <img src="/images/icon-arrow.svg" alt="arrow right"/>
+               </button>
+
+               
+
+               
             </form>
          </main>
       </div>
+
       <aside>
          <!-- <img src="/images/hero-desktop.jpg" alt="model"> -->
       </aside>
@@ -51,6 +63,6 @@
   </footer>
 
 
-  <script src="./js/main.js"></script>
+  
 </body>
 </html>
