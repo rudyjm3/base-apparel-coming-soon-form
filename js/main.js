@@ -46,7 +46,7 @@ const validateInput = () => {
    } else {
       setSuccess(email);
       error_icon.style.cssText = "opacity: 0;";
-      successTxt.innerHTML = "You have been signed up!";
+      successTxt.innerHTML = "You have been signed up! (Form will reset in 5 seconds)";
       successTxt.style.cssText = "color: #09c372;";
       setTimeout(function()
     {
