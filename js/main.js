@@ -35,6 +35,7 @@ const isValidEmail = email => {
 
 const validateInput = () => {
    const emailValue = email.value.trim();
+   let successTxt = document.getElementsByClassName('success-txt')[0];
 
    if (emailValue === '') {
       setError(email, 'Email is required');
@@ -45,6 +46,14 @@ const validateInput = () => {
    } else {
       setSuccess(email);
       error_icon.style.cssText = "opacity: 0;";
+      successTxt.innerHTML = "You have been signed up!";
+      successTxt.style.cssText = "color: #09c372;";
+      setTimeout(function()
+    {
+        document.getElementById('emailForm').reset();
+        successTxt.innerHTML = "";
+        document.getElementsByClassName('input-control')[0].classList.remove('success');
+    }, 5000);
    }
 };
 
